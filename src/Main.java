@@ -76,5 +76,15 @@ public class Main {
         {
             System.out.println(day);
         }
+// Задача 8
+        System.out.println("Задача 8");
+        int seychas=2054;
+        int ransche=seychas-200;
+        int potom =seychas+100;
+        for (int year = 0; year<=potom; year++){
+            if (year>=ransche && year%79==0){
+                System.out.println(year);
+            }
+        }
     }
 }
