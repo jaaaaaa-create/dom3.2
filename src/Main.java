@@ -27,12 +27,45 @@ public class Main {
         double pups=0;
         double die=0;
         for (int j=1; j<11; j++){
-            pups=pups+(vsego*17/1000);
-            die=die+(vsego*8/1000);
+            pups=(vsego*17/1000);
+            die=(vsego*8/1000);
             vsego= (int) (vsego+pups-die);
             System.out.println("Год "+j+", численность населения составляет "+vsego);
         }
 // Задача 4
-
+        System.out.println("Задача 4");
+        int oll =15_000;
+        int k=0;
+        while (oll<=12_000_000){
+            k++;
+            oll=oll+(oll*7/100);
+            System.out.println("Месяц: "+k+", суммна накоплений: "+oll);
+        }
+// Задача 5
+        System.out.println("Задача 5");
+        int oll1 =15_000;
+        int t=0;
+        while (oll1<=12_000_000) {
+            t++;
+            oll1 = oll1 + (oll1 * 7 / 100);
+            if (t % 6 == 0) {
+                System.out.println("Месяц: " + t + ", суммна накоплений: " + oll1);
+            }
+        }System.out.println("Месяц: " + t + ", суммна накоплений: " + oll1);
+// Задача 6
+        System.out.println("Задача 6");
+        int oll2 =15_000;
+        int g=0;
+        int polYear =0;
+        while (g<9*12) {
+            g++;
+            oll2 = oll2 + (oll2 * 7 / 100);
+            if (g % 6 == 0) {
+                polYear=polYear+1;
+                System.out.println("Полугодие: " + polYear + "е, суммна накоплений: " + oll2);
+            }
+        }
+// Задача 7
+        System.out.println("Задача 7");
     }
 }
